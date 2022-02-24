@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  db:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: "Postgres2019!"
+    ports:
+      - "15432:5432"
+    volumes:
+      - /home/lt-sw-237/dev-docker/Docker-Compose/PostgreSQL:/var/lib/postgresql/data
