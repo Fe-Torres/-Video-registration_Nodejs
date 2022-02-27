@@ -17,10 +17,10 @@ export class Video {
     duration: number;
 
     @Column()
-    categorie_id: string;
+    category_id: string;
 
     @ManyToOne(()=> Category)
-    @JoinColumn({name:"categorie_id"})
+    @JoinColumn({name:"category_id"})
     category:  Category;
 
     constructor(){
